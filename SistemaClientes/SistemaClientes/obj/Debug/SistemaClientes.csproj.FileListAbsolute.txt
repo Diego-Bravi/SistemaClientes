@@ -1,0 +1,88 @@
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.exe.config
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.exe
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.pdb
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.AssemblyReference.cache
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.SuggestedBindingRedirects.cache
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmAgregarSocio.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.Properties.Resources.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.GenerateResource.cache
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.CoreCompileInputs.cache
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.exe
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.pdb
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmBusquedaCliente.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmConsultaSocio.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoSocios.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmSistemaSocios.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\Repaso Final2\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoDeudores.resources
+E:\1\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.exe.config
+E:\1\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.exe
+E:\1\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.pdb
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.AssemblyReference.cache
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.SuggestedBindingRedirects.cache
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmAgregarSocio.resources
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmBusquedaCliente.resources
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmConsultaSocio.resources
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoDeudores.resources
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoSocios.resources
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmSistemaSocios.resources
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.Properties.Resources.resources
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.GenerateResource.cache
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.CoreCompileInputs.cache
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.exe
+E:\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.pdb
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.exe.config
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.exe
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.pdb
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.AssemblyReference.cache
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmAgregarSocio.resources
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmBusquedaCliente.resources
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmConsultaSocio.resources
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoDeudores.resources
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoSocios.resources
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmSistemaSocios.resources
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.Properties.Resources.resources
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.GenerateResource.cache
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.CoreCompileInputs.cache
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.exe
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.pdb
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoActividad.resources
+C:\Users\Hola\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoBarrio.resources
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.exe.config
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.exe
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.pdb
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.AssemblyReference.cache
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.SuggestedBindingRedirects.cache
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmAgregarSocio.resources
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmBusquedaCliente.resources
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmConsultaSocio.resources
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoActividad.resources
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoBarrio.resources
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoDeudores.resources
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoSocios.resources
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmSistemaSocios.resources
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.Properties.Resources.resources
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.GenerateResource.cache
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.CoreCompileInputs.cache
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.exe
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.pdb
+C:\Users\diego\Desktop\1\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmAcercade.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.exe.config
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.exe
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\bin\Debug\SistemaClientes.pdb
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.AssemblyReference.cache
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.SuggestedBindingRedirects.cache
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmAcercade.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmAgregarSocio.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmBusquedaCliente.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmConsultaSocio.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoActividad.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoBarrio.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoDeudores.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmListadoSocios.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.frmSistemaSocios.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.Properties.Resources.resources
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.GenerateResource.cache
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.csproj.CoreCompileInputs.cache
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.exe
+C:\Users\diego\Desktop\IES DIEGO\Laboratorio de Programacion 2\FINAL PENDRIVE\SistemaClientes\SistemaClientes\obj\Debug\SistemaClientes.pdb
