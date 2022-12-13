@@ -51,10 +51,9 @@ namespace SistemaClientes
 
         private void cmdEliminar_Click(object sender, EventArgs e)
         {
-            clsSocio x = new clsSocio();
-
-            x.Eliminar(Convert.ToInt32(txtCodigo.Text));
-            MessageBox.Show("Dato Eliminado");
+            clsSocio soc = new clsSocio();
+            soc.Eliminar(Convert.ToInt32(txtCodigo.Text));
+            MessageBox.Show("Dato Eliminado Exitosamente");
             Limpiar();
         }
 
@@ -70,13 +69,30 @@ namespace SistemaClientes
             cmdGuardar.Enabled = false;
         }
 
+        private void controlarCaja()
+        {
+            if(txtCodigo.Text != "")
+            {
+                cmdBuscar.Enabled = true;
+            }
+            else
+            {
+                cmdBuscar.Enabled = false;
+            }
+        }
         private void cmdGuardar_Click(object sender, EventArgs e)
         {
             clsSocio soc = new clsSocio();
-            soc.Modificar(Convert.ToInt32(txtCodigo.Text));
             soc.Deuda = Convert.ToDecimal(txtDeuda.Text);
+            soc.Modificar(Convert.ToInt32(txtCodigo.Text));
+            
             MessageBox.Show("Dato Grabado Correctamente");
             Limpiar();
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            controlarCaja();
         }
     }
 }

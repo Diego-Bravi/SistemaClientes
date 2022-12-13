@@ -146,6 +146,7 @@
             // 
             // cmdBuscar
             // 
+            this.cmdBuscar.Enabled = false;
             this.cmdBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.cmdBuscar.Location = new System.Drawing.Point(91, 51);
             this.cmdBuscar.Name = "cmdBuscar";
@@ -162,6 +163,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(128, 23);
             this.txtCodigo.TabIndex = 8;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // label1
             // 

@@ -41,11 +41,11 @@
             this.cmdReporte = new System.Windows.Forms.Button();
             this.cmdListar = new System.Windows.Forms.Button();
             this.Grilla = new System.Windows.Forms.DataGridView();
+            this.prtVentana = new System.Windows.Forms.PrintDialog();
+            this.prtDocument = new System.Drawing.Printing.PrintDocument();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prtVentana = new System.Windows.Forms.PrintDialog();
-            this.prtDocument = new System.Drawing.Printing.PrintDocument();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
@@ -194,9 +194,17 @@
             this.Grilla.Size = new System.Drawing.Size(522, 219);
             this.Grilla.TabIndex = 0;
             // 
+            // prtVentana
+            // 
+            this.prtVentana.UseEXDialog = true;
+            // 
+            // prtDocument
+            // 
+            this.prtDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.prtDocument_PrintPage);
+            // 
             // Codigo
             // 
-            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.HeaderText = "DNI";
             this.Codigo.Name = "Codigo";
             this.Codigo.Width = 60;
             // 
@@ -211,14 +219,6 @@
             this.Column4.HeaderText = "Deuda";
             this.Column4.Name = "Column4";
             this.Column4.Width = 130;
-            // 
-            // prtVentana
-            // 
-            this.prtVentana.UseEXDialog = true;
-            // 
-            // prtDocument
-            // 
-            this.prtDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.prtDocument_PrintPage);
             // 
             // frmListadoDeudores
             // 
@@ -241,9 +241,6 @@
         private System.Windows.Forms.Button cmdReporte;
         private System.Windows.Forms.Button cmdListar;
         private System.Windows.Forms.DataGridView Grilla;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Button cmdImprimir;
         private System.Windows.Forms.Label lblMayor;
         private System.Windows.Forms.Label lblMenor;
@@ -255,5 +252,8 @@
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.PrintDialog prtVentana;
         private System.Drawing.Printing.PrintDocument prtDocument;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

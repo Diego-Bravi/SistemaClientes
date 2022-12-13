@@ -100,12 +100,12 @@ namespace SistemaClientes
         }
 
 
-        public void Modificar(Int32 Socio)
+        public void Modificar(Int32 IdSocio)
         {
             try
             {
                 String sql = "";
-                sql = "UPDATE Socio SET Deuda = " + Deu.ToString() + " WHERE idSocio = " + Socio.ToString();
+                sql = "UPDATE SOCIO SET DEUDA = " + Deu.ToString() + " WHERE IDSOCIO = " + IdSocio.ToString();
                 conexion.ConnectionString = CadenaConexion;
                 conexion.Open();
 
@@ -125,6 +125,32 @@ namespace SistemaClientes
             }
         }
 
+
+        public void Eliminar(Int32 IdSocio)
+        {
+            try
+            {
+                String sql = "DELETE * FROM SOCIO WHERE IDSOCIO = " + IdSocio.ToString();
+                conexion.ConnectionString = CadenaConexion;
+                conexion.Open();
+
+                comando.Connection = conexion;
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = sql;
+                comando.ExecuteNonQuery();
+
+
+
+
+                conexion.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+        }
+
+
         public void Agregar()
         {
             try
@@ -142,11 +168,12 @@ namespace SistemaClientes
                 DataTable tabla = DS.Tables[Tabla];
                 DataRow fila = tabla.NewRow();
 
+                fila["idSocio"] = idSoc;
                 fila["Nombre"] = Nom;
                 fila["Direccion"] = Direc;
                 fila["idBarrio"] = idBarr;
                 fila["idActividad"] = idAct;
-                fila["Deuda"] = 0;
+                fila["Deuda"] = Deu;
 
                 tabla.Rows.Add(fila);
                 OleDbCommandBuilder ConciliaCambios = new OleDbCommandBuilder(adaptador);
@@ -215,21 +242,22 @@ namespace SistemaClientes
                 adaptador = new OleDbDataAdapter(comando);
                 DataSet DS = new DataSet();
                 adaptador.Fill(DS, Tabla);
-                clsActividad act = new clsActividad();
-                String nomAct = "";
+               
+                
 
 
                 if (DS.Tables[Tabla].Rows.Count > 0)
                 {
                     foreach (DataRow x in DS.Tables[Tabla].Rows)
                     {
+                       
                         if (Convert.ToInt32(x["idSocio"]) == IdSocio)
                         {
-                            nomAct = act.Buscar(Convert.ToInt32(x["idActividad"]));
+                          
                             idSoc = Convert.ToInt32(x["idSocio"]);
                             Nom = x["Nombre"].ToString();
                             Direc = x["Direccion"].ToString();
-                            idAct = Convert.ToInt32(nomAct);
+                            idAct = Convert.ToInt32(x["idActividad"]);
                             Deu = Convert.ToDecimal(x["Deuda"]);
 
                         }
@@ -245,29 +273,7 @@ namespace SistemaClientes
             }
         }
 
-        public void Eliminar(Int32 IdSocio)
-        {
-            try
-            {
-                String sql = "DELETE * FROM SOCIO WHERE IDSOCIO = " + IdSocio.ToString();
-                conexion.ConnectionString = CadenaConexion;
-                conexion.Open();
-
-                comando.Connection = conexion;
-                comando.CommandType = CommandType.Text;
-                comando.CommandText = sql;
-                comando.ExecuteNonQuery();
-
-
-
-
-                conexion.Close();
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.ToString());
-            }
-        }
+       
 
         public void Listar(ComboBox Combo)
         {
@@ -377,7 +383,7 @@ namespace SistemaClientes
 
 
                 Reporte.Graphics.DrawString("Listado de Socios", Titulo1, Brushes.Red, 300, 80);
-                Reporte.Graphics.DrawString("idSocio", Titulo2, Brushes.Blue, 100, 170);
+                Reporte.Graphics.DrawString("DNI", Titulo2, Brushes.Blue, 100, 170);
                 Reporte.Graphics.DrawString("Nombre Socio", Titulo2, Brushes.Blue, 180, 170);
                 Reporte.Graphics.DrawString("Direccion", Titulo2, Brushes.Blue, 300, 170);
                 Reporte.Graphics.DrawString("Barrio", Titulo2, Brushes.Blue, 450, 170);
@@ -434,8 +440,8 @@ namespace SistemaClientes
 
                 Reporte.Graphics.DrawString("Total Deuda : " + TotDeuda.ToString("0.00"), LetraTexto, Brushes.Blue, 100, 120);
                 Reporte.Graphics.DrawString("Promedio Deuda : " + PromedioDeuda.ToString("0.00"), LetraTexto, Brushes.Blue, 100, 140);
-                Reporte.Graphics.DrawString("Deuda Mayor : " + NumeroMenor, LetraTexto, Brushes.Blue, 250, 120);
-                Reporte.Graphics.DrawString("Deuda Menor : " + NumeroMayor, LetraTexto, Brushes.Blue, 250, 140);
+                Reporte.Graphics.DrawString("Deuda Menor : " + NumeroMenor, LetraTexto, Brushes.Blue, 250, 120);
+                Reporte.Graphics.DrawString("Deuda Mayor : " + NumeroMayor, LetraTexto, Brushes.Blue, 250, 140);
 
 
                 conexion.Close();
@@ -609,7 +615,7 @@ namespace SistemaClientes
                 Font LetraTexto = new Font("Arial", 8);
                 Font Titulo1 = new Font("Arial", 20);
                 Font Titulo2 = new Font("Arial", 12);
-                Int32 Linea = 230;
+                Int32 Linea = 200;
 
                 TotDeuda = 0;
                 Cant = 0;
@@ -621,7 +627,7 @@ namespace SistemaClientes
 
 
                 Reporte.Graphics.DrawString("Listado de Socios Deudores", Titulo1, Brushes.Red, 120, 80);
-                Reporte.Graphics.DrawString("idSocio", Titulo2, Brushes.Blue, 100, 170);
+                Reporte.Graphics.DrawString("DNI", Titulo2, Brushes.Blue, 100, 170);
                 Reporte.Graphics.DrawString("Nombre Socio", Titulo2, Brushes.Blue, 180, 170);
                 Reporte.Graphics.DrawString("Deuda", Titulo2, Brushes.Blue, 320, 170);
                 conexion.ConnectionString = CadenaConexion;
@@ -644,9 +650,9 @@ namespace SistemaClientes
                         if (Convert.ToInt32(fila["Deuda"]) > 0)
                         {
 
-                            Reporte.Graphics.DrawString(fila["idSocio"].ToString(), LetraTexto, Brushes.Black, 100, Linea);
-                            Reporte.Graphics.DrawString(fila["Nombre"].ToString(), LetraTexto, Brushes.Black, 180, Linea);
-                            Reporte.Graphics.DrawString(fila["Deuda"].ToString(), LetraTexto, Brushes.Black, 320, Linea);
+                            Reporte.Graphics.DrawString(fila["idSocio"].ToString(), LetraTexto, Brushes.Black, 110, Linea);
+                            Reporte.Graphics.DrawString(fila["Nombre"].ToString(), LetraTexto, Brushes.Black, 190, Linea);
+                            Reporte.Graphics.DrawString(fila["Deuda"].ToString(), LetraTexto, Brushes.Black, 330, Linea);
 
                             Linea = Linea + 15;
 
@@ -670,8 +676,8 @@ namespace SistemaClientes
 
                 Reporte.Graphics.DrawString("Total Deuda : " + TotDeuda.ToString("0.00"), LetraTexto, Brushes.Blue, 100, 120);
                 Reporte.Graphics.DrawString("Promedio Deuda : " + PromedioDeuda.ToString("0.00"), LetraTexto, Brushes.Blue, 100, 140);
-                Reporte.Graphics.DrawString("Deuda Mayor : " + NumeroMenor, LetraTexto, Brushes.Blue, 250, 120);
-                Reporte.Graphics.DrawString("Deuda Menor : " + NumeroMayor, LetraTexto, Brushes.Blue, 250, 140);
+                Reporte.Graphics.DrawString("Deuda Menor : " + NumeroMenor, LetraTexto, Brushes.Blue, 250, 120);
+                Reporte.Graphics.DrawString("Deuda Mayor : " + NumeroMayor, LetraTexto, Brushes.Blue, 250, 140);
 
 
 
@@ -837,7 +843,7 @@ namespace SistemaClientes
                 Font Titulo1 = new Font("Arial", 20);
                 Font Titulo2 = new Font("Arial",15);
                 Font Titulo3 = new Font("Arial", 12);
-                Int32 Linea = 250;
+                Int32 Linea = 230;
                 clsActividad act = new clsActividad();
                 String nomAct = "";
 
@@ -870,7 +876,7 @@ namespace SistemaClientes
 
                             Reporte.Graphics.DrawString("Listado de Socios por Actividad", Titulo1, Brushes.Red, 120, 30);
                             Reporte.Graphics.DrawString("Actividad : " + nomAct, Titulo2, Brushes.Red, 100, 80);
-                            Reporte.Graphics.DrawString("idSocio", Titulo3, Brushes.Blue, 100, 190);
+                            Reporte.Graphics.DrawString("DNI", Titulo3, Brushes.Blue, 100, 190);
                             Reporte.Graphics.DrawString("Nombre Socio", Titulo3, Brushes.Blue, 180, 190);
                             Reporte.Graphics.DrawString("Deuda", Titulo3, Brushes.Blue, 320, 190);
                             Reporte.Graphics.DrawString(fila["idSocio"].ToString(), LetraTexto, Brushes.Black, 100, Linea);
@@ -899,8 +905,8 @@ namespace SistemaClientes
 
                 Reporte.Graphics.DrawString("Total Deuda : " + TotDeuda.ToString("0.00"), LetraTexto, Brushes.Blue, 100, 120);
                 Reporte.Graphics.DrawString("Promedio Deuda : " + PromedioDeuda.ToString("0.00"), LetraTexto, Brushes.Blue, 100, 140);
-                Reporte.Graphics.DrawString("Deuda Mayor : " + NumeroMenor, LetraTexto, Brushes.Blue, 250, 120);
-                Reporte.Graphics.DrawString("Deuda Menor : " + NumeroMayor, LetraTexto, Brushes.Blue, 250, 140);
+                Reporte.Graphics.DrawString("Deuda Menor : " + NumeroMenor, LetraTexto, Brushes.Blue, 250, 120);
+                Reporte.Graphics.DrawString("Deuda Mayor : " + NumeroMayor, LetraTexto, Brushes.Blue, 250, 140);
 
                 conexion.Close();
 
@@ -1067,7 +1073,7 @@ namespace SistemaClientes
                 Font Titulo1 = new Font("Arial", 20);
                 Font Titulo2 = new Font("Arial", 15);
                 Font Titulo3 = new Font("Arial", 12);
-                Int32 Linea = 250;
+                Int32 Linea = 200;
                 clsBarrio barr = new clsBarrio();
 
                 String nomBarr = "";
@@ -1101,9 +1107,9 @@ namespace SistemaClientes
 
                             Reporte.Graphics.DrawString("Listado de Socios por Barrio", Titulo1, Brushes.Red, 120, 30);
                             Reporte.Graphics.DrawString("Barrio : "+ nomBarr, Titulo2, Brushes.Red, 100, 80);
-                            Reporte.Graphics.DrawString("idSocio", Titulo3, Brushes.Blue, 100, 190);
-                            Reporte.Graphics.DrawString("Nombre Socio", Titulo3, Brushes.Blue, 180, 190);
-                            Reporte.Graphics.DrawString("Deuda", Titulo3, Brushes.Blue, 320, 190);
+                            Reporte.Graphics.DrawString("DNI", Titulo3, Brushes.Blue, 100, 160);
+                            Reporte.Graphics.DrawString("Nombre Socio", Titulo3, Brushes.Blue, 180, 160);
+                            Reporte.Graphics.DrawString("Deuda", Titulo3, Brushes.Blue, 320, 160);
                             Reporte.Graphics.DrawString(fila["idSocio"].ToString(), LetraTexto, Brushes.Black, 100, Linea);
                             Reporte.Graphics.DrawString(fila["Nombre"].ToString(), LetraTexto, Brushes.Black, 180, Linea);
                             Reporte.Graphics.DrawString(fila["Deuda"].ToString(), LetraTexto, Brushes.Black, 320, Linea);

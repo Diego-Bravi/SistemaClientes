@@ -32,7 +32,7 @@
             this.lblDeuda = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblActividad = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblDni = new System.Windows.Forms.Label();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@
             this.groupBox1.Controls.Add(this.lblDeuda);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.lblActividad);
-            this.groupBox1.Controls.Add(this.lblNombre);
+            this.groupBox1.Controls.Add(this.lblDni);
             this.groupBox1.Controls.Add(this.lblDireccion);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -86,13 +86,13 @@
             this.lblActividad.Size = new System.Drawing.Size(226, 24);
             this.lblActividad.TabIndex = 5;
             // 
-            // lblNombre
+            // lblDni
             // 
-            this.lblNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblNombre.Location = new System.Drawing.Point(85, 35);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(226, 23);
-            this.lblNombre.TabIndex = 4;
+            this.lblDni.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDni.Location = new System.Drawing.Point(85, 35);
+            this.lblDni.Name = "lblDni";
+            this.lblDni.Size = new System.Drawing.Size(226, 23);
+            this.lblDni.TabIndex = 4;
             // 
             // lblDireccion
             // 
@@ -125,9 +125,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 17);
+            this.label2.Size = new System.Drawing.Size(39, 17);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Nombre :";
+            this.label2.Text = "DNI :";
             // 
             // cmdBuscar
             // 
@@ -183,7 +183,7 @@
         private System.Windows.Forms.Label lblDeuda;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblActividad;
-        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblDni;
         private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

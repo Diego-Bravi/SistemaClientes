@@ -31,6 +31,7 @@ namespace SistemaClientes
         {
             clsSocio soc = new clsSocio();
 
+            soc.IdSocio = Convert.ToInt32(txtDni.Text);
             soc.Nombre = txtNombre.Text;
             soc.Direccion = txtDireccion.Text;
             soc.idBarrio = Convert.ToInt32(cmbBarrio.SelectedValue);
@@ -38,6 +39,8 @@ namespace SistemaClientes
             soc.Deuda = Convert.ToDecimal(txtDeuda.Text);
             soc.Agregar();
             MessageBox.Show("Datos Agregados");
+
+            txtDni.Text = "";
             txtNombre.Text = "";
             txtDireccion.Text = "";
             cmbBarrio.SelectedIndex = 0;
@@ -49,5 +52,7 @@ namespace SistemaClientes
         {
 
         }
+
+    
     }
 }

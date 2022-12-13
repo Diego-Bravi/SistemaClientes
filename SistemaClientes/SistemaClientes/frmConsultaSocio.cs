@@ -28,17 +28,24 @@ namespace SistemaClientes
         {
             Int32 idSocio = Convert.ToInt32(cmbSocio.SelectedValue);
             clsSocio x = new clsSocio();
-
+          
             x.ConsultaSocio(idSocio);
+            clsActividad act = new clsActividad();
+
+
+            String nomAct = "";
+            nomAct = act.Buscar(Convert.ToInt32(x.idActividad));
+
             if (x.IdSocio == 0)
             {
                 MessageBox.Show("Dato No Encontrado.");
             }
             else
             {
-                lblNombre.Text = x.Nombre;
+                
+                lblDni.Text = x.IdSocio.ToString();
                 lblDireccion.Text = x.Direccion.ToString();
-                lblActividad.Text = x.idActividad.ToString();
+                lblActividad.Text = nomAct.ToString();
                 lblDeuda.Text = x.Deuda.ToString();
             }
         }
